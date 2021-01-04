@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <title>
+      IAP : profiter de l'expertise de Google sans avoir à redévelopper
+      l'authentification
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>IAP : Identity-aware Proxy</h1>
+      <p>
+        ou comment profiter de l'expertise de Google pour ne pas avoir à recoder
+        une interface entière d'authentification
+      </p>
+    </header>
+    <main>
+      <article>
+        <h3>
+          1. Une fois que Iap est activée, on peut ajouter à sa guise les
+          adresses mail des utilisateurs à la liste autorisée
+        </h3>
+        <h3>
+          2. L'identité des utilisateurs accédant à l'application est
+          authentifiée par Google, ce qui permet alors de leur accorder des
+          fonctions personnalisées
+        </h3>
+        <h3>
+          3. Google enverra l'identité authentifiée vers l'application via les
+          en-têtes de requêtes HTTP, voici le code Node permettant de récupérer
+          cette identité :
+        </h3>
+        <br /><br />
+        <h1>
+          app.get('/', function(req, res) {res.send(
+          <mark
+            ><strong>
+              req.headers['x-goog-authenticated-user-email']</strong
+            ></mark
+          >) });
+        </h1>
+      </article>
+    </main>
+  </body>
+</html>

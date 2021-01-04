@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <title>Audit Logs : Surveillance de l'activité d'un administrateur</title>
+  </head>
+  <body>
+    <header>
+      <h1>Audit Logs : Surveillance de l'activité d'un administrateur</h1>
+      <p>
+        Cela peut vous inquièter de donner l'accés total à un nouvel employé,
+        mais il existe une fonction dans GCP qui s'appelle les
+        <em>Journaux d'administration ou 'Audit Logs'</em> et qui recensent la
+        totalité des actions administratives(c'est à dire qui modifient
+        l'infrastructure du cloud d'une manière ou d'une autre, comme l'ajout ou
+        la suppression d'un serveur, la mise à jour de la version d'une
+        application, ...).<br />En surveillant le journal d'administration du
+        nouvel employé, vous pouvez étudier jour par jour, toutes les actions
+        qu'il a entrepris dans la journée.
+      </p>
+    </header>
+    <main>
+      <article>
+        <h3>
+          1. Dans la page d'accueil de Google Cloud, cliquez sur l'onglet
+          <em>"Activité"</em> en haut de la page
+        </h3>
+        <img style="margin: 100px" src="img/auditlog1.png" alt="" />
+        <h3>
+          2. Ensuite, sur la partie droite de l'écran, inscrivez dans la case
+          <em>"Nom"</em> l'adresse mail de votre nouvel employé puis appuyez sur Entrée
+        </h3>
+        <img style="margin: 100px" src="img/auditlog2.png" alt="" />
+        <h3>
+          3. Enfin, vous pouvez voir dans la partie centrale de l'écran toutes
+          les activités de l'individu jour par jour, et pouvez également obtenir
+          des détails en cliquant sur une entrée
+        </h3>
+      </article>
+    </main>
+  </body>
+</html>
